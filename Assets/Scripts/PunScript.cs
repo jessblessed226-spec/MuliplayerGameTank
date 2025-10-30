@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using System.Collections;
+
 using TMPro;
 
 public class PunScript : MonoBehaviourPunCallbacks
@@ -27,7 +29,7 @@ public class PunScript : MonoBehaviourPunCallbacks
         TxtInfo.text = $"Connecté à la salle : {PhotonNetwork.CurrentRoom.Name}\n" +
                        $"Joueurs : {PhotonNetwork.CurrentRoom.PlayerCount}\n" +
                        $"Rôle : {masterStatus}";
-        PhotonNetwork.Instantiate(PrefabTank.name, SpawnPoint.position, Quaternion.identity,0);
+        StartCoroutine(SpawnMyPlayer());
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -50,6 +52,24 @@ public class PunScript : MonoBehaviourPunCallbacks
     public override void OnDisconnected(DisconnectCause cause)
     {
         TxtInfo.text = $"Déconnecté : {cause}";
+    }
+    IEnumerator SpawnMyPlayer()
+    {
+        // Instancie ton joueur sur le réseau
+        GameObject myPlayer = PhotonNetwork.Instantiate(PrefabTank.name, SpawnPoint.position, Quaternion.identity);
+
+        // Attend 5 secondes avant de continuer
+        yield return new WaitForSeconds(5);
+
+        // Ajoute un Rigidbody s’il n’en a pas déjà un
+        if (myPlayer.GetComponent<Rigidbody>() == null)
+        {
+            myPlayer.AddComponent<Rigidbody>();
+        }
+
+        // Configure le mode de détection de collisions
+        Rigidbody rb = myPlayer.GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
 
     void Update()
