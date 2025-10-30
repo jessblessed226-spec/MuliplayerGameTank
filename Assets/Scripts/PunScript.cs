@@ -6,7 +6,8 @@ using TMPro;
 public class PunScript : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI TxtInfo;
-
+    public Transform SpawnPoint;
+    public GameObject PrefabTank;
     void Start()
     {
         PhotonNetwork.AutomaticallySyncScene = true; // Synchronise la scène entre joueurs
@@ -26,6 +27,7 @@ public class PunScript : MonoBehaviourPunCallbacks
         TxtInfo.text = $"Connecté à la salle : {PhotonNetwork.CurrentRoom.Name}\n" +
                        $"Joueurs : {PhotonNetwork.CurrentRoom.PlayerCount}\n" +
                        $"Rôle : {masterStatus}";
+        PhotonNetwork.Instantiate(PrefabTank.name, SpawnPoint.position, Quaternion.identity,0);
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
