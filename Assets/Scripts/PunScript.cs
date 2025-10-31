@@ -10,6 +10,7 @@ public class PunScript : MonoBehaviourPunCallbacks
     public TextMeshProUGUI TxtInfo;
     public Transform SpawnPoint;
     public GameObject PrefabTank;
+    public Camera MainCamera;
     void Start()
     {
         PhotonNetwork.AutomaticallySyncScene = true; // Synchronise la scène entre joueurs
@@ -57,7 +58,7 @@ public class PunScript : MonoBehaviourPunCallbacks
     {
         // Instancie ton joueur sur le réseau
         GameObject myPlayer = PhotonNetwork.Instantiate(PrefabTank.name, SpawnPoint.position, Quaternion.identity);
-
+        MainCamera.GetComponent<SmoothFollow>().target = myPlayer.transform;
         // Attend 5 secondes avant de continuer
         yield return new WaitForSeconds(5);
 

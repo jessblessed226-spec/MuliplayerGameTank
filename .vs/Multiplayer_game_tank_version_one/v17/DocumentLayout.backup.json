@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Scripts\\PunScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PunScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Scripts\\PhotonViewRuntimeAdder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PhotonViewRuntimeAdder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhotonNetwork.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs",
+              "RelativeDocumentMoniker": "Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs",
+              "ToolTip": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs",
+              "RelativeToolTip": "Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs",
+              "ViewState": "AgIAABEKAAAAAAAAAAAqwC8KAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T15:05:10.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhotonViewRuntimeAdder.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Scripts\\PhotonViewRuntimeAdder.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PhotonViewRuntimeAdder.cs",
+              "ToolTip": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Scripts\\PhotonViewRuntimeAdder.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PhotonViewRuntimeAdder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T15:03:15.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T13:21:07.775Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -28,7 +79,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PunScript.cs",
               "ToolTip": "C:\\Users\\user\\Multiplayer_game_tank_version_one\\Assets\\Scripts\\PunScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\PunScript.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T19:47:55.817Z",
               "EditorCaption": ""
